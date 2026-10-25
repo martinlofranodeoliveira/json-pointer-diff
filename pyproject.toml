@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-pointer-diff"
+version = "0.1.0"
+description = "Offline, value-free JSON differences as RFC 6901 pointers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Martin Lofrano de Oliveira"}]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+json-pointer-diff = "json_pointer_diff.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["json_pointer_diff*"]
